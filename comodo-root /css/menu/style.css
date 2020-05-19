@@ -1,0 +1,1117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	font-size: 62.5%;/*16px　×　62.5% = 10px*/
+	}
+body{
+font-family: fot-tsukuardgothic-std, sans-serif;
+font-weight: normal;
+font-style: normal;	
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color: #4E2A04;
+	background: #F7EFE4;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	line-height: 1;
+}
+/*背景画像インナー*/
+.backimg-inner{
+	background-image:url(../../images/logo-pass.png);
+	 background-repeat:no-repeat;
+	 background-position: center 10px ;
+	 background-attachment:fixed;
+	 background-size: 560px auto;
+}
+/*フェードイン*/
+.fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+
+/*ヘッダー横幅*/
+.header-inner{
+	background-color: #F7EFE4;
+	margin: 0 103px 0;
+}
+/*ヘッダー左*/
+.header-over{
+	display: flex;
+	justify-content: space-between;
+}
+.header-left{	
+	margin: auto 0 auto;
+}
+.logo{
+	width: 374px;
+	height: 108px;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.logo:hover{
+	opacity: 0.8;
+}
+/*ヘッダー右アドレス*/
+.header-rightbox{
+	display: block;
+    padding: 30px 0 30px;}
+.header-right{
+	text-align: right;
+	list-style: none;
+    padding-bottom: 30px;	
+}
+.header-tel{
+	font-size: 1.6rem;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+.header-open{
+	padding-top: 7px;
+	font-size: 14px;
+}
+.header-dinner{
+	padding-left: 10px;
+}
+.header-access{
+	padding-top: 8px;
+	font-size: 1.4rem;
+}
+/*ヘッダー右ナビ*/
+.nav{
+	list-style: none;
+	font-size: 3.2rem;
+    font-weight: bold;
+    display: flex; 
+	justify-content: flex-end;
+}
+.nav-btn{
+	padding-left: 30px;
+	letter-spacing: 0.02em;	
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all  0.2s ease;
+}
+/*クリック時の動作（ヘッダーのみ）*/
+.nav-btn:hover{
+opacity: 0.5;
+}
+/*クリック時の動作（フッター共通）*/
+.click{
+	transform: scale(1.0);
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all  0.2s ease;
+}
+.click:hover{
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+/*マウス時の動作（フッター共通）ここまで*/
+/*カレント表示（現在ページのみ表示）*/
+.current{
+	letter-spacing: 0.02em;
+	opacity: 0.5;
+	border-bottom: solid 3px #BB0402;
+	padding-bottom: 2px;
+}
+.about{
+	padding-right: 30px;
+}
+.page-now{
+	padding-right: 30px;
+}
+.header-re{
+	display: none;
+}
+/*カレント表示ここまで*/
+/*ヘッダーここまで*/
+
+
+/*メニューナビゲーション*/
+
+/* グローバルナビ */
+#globalNavi ul {
+    display: flex;
+    background: rgba(229,216,187,0.9);
+    flex-flow: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+}
+ 
+#globalNavi li a img {
+    display: block;
+	margin: 10px 120px;
+	width: 70px;
+}
+ 
+
+#globalNavi ul li a :hover {
+opacity: 0.5;
+}
+ 
+/* 固定 */
+.fixed {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*メニュー*/
+/*メニュー見出し*/
+.contents-ttl{
+	text-align: center;
+	color: #4E2A04;
+	font-size: 3.6rem;
+	font-weight: bold;
+	background-color:rgba(229,216,187,0.9);
+	padding: 30px 0 ;
+}
+
+/*ランチidの位置調整*/
+
+/*ランチ*/
+.ttl-menu{
+	width: 484px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 100px 0;
+	margin-top: -100px;
+}
+
+.ttl-name{
+	font-size: 4.4rem;
+	font-weight: bold;
+	margin: auto;
+}
+
+.right{
+	width: 80px;
+	height: 80px;
+}
+.open-time{
+	font-size: 3.6rem;
+	text-align: center;
+}
+
+/*ランチメニュー欄*/
+.lunch-inner{
+	padding: 150px 0 120px;
+}
+.letter{
+	letter-spacing: 0.1em;
+}
+.lunch-list{
+	width: 360px;
+	text-align: center;
+}
+.lunch-up{
+	width: 760px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 80px;
+}
+.lunch-low{
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+.lunch-img{
+	width: 360px;
+}
+.lunch-name{
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+}
+.lunch-sup{
+	font-size: 1.6rem;
+	text-align: center;
+}
+.lunch-ex{
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-align: left;
+	padding-top: 10px;
+}
+.hun{
+	letter-spacing: normal;
+	width: 370px;
+}
+.qui{
+	width: 366px;
+}
+.re-quiche{
+	display: none;
+}
+/*ランチデザート*/
+
+.lunch-des{
+	width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+}
+.des-icon{
+	padding-right: 8px;
+	width: 30px;
+	height: 30px;
+}
+.des-txt{
+	display: block;
+}
+.des-ex{
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+.des-sub{
+	font-size: 1.6rem;
+	padding-top: 5px;
+}
+/*ディナー*/
+/*ディナー背景*/
+.dinner-inner{
+	background-image: url("../../images/dinner-salad.png"),
+					  url("../../images/dinner-piatto.png"),
+					  url("../../images/dinner-risotto.png"),
+					  url("../../images/dinner-dessert.png"),
+					  url("../../images/dinner-drink.png");
+	
+	background-size: 232px 229px,
+	                 232px 229px,
+	                 232px 229px,
+	                 275px 275px,
+	                 215px 215px;
+	
+	background-position: top 950px left 60px, 
+		                 top 1400px right 70px,
+		                 top 1950px left 60px,
+		                 top 2500px right 70px,
+		                 top 2900px left 60px;
+	
+	background-repeat: no-repeat,
+	                   no-repeat,
+	                   no-repeat,
+	                   no-repeat,
+	                   no-repeat;
+             }
+
+.course-inner{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 80px;
+	text-align: center;
+}
+.course-inner h3{
+	font-size: 3.6rem;
+
+}
+.course-inner img{
+	padding-top: 60px;
+	width: 420px;
+	
+}
+.cource{
+	font-size: 3.2rem;
+	padding-top: 40px;
+}
+.sub{
+	font-size: 2.8rem;
+	padding-top: 20px;
+}
+.food-inner{
+	padding: 80px 0 120px;
+	width: 640px;
+	margin: 0 auto;
+	text-align: center;
+}
+.dinnericon{
+	width: 80px;
+	height: 80px;
+}
+.food-top{
+	font-size: 3.6rem;
+	font-weight: bold;
+}
+.weekly{
+	font-size: 2.4rem;
+	padding-top: 60px;
+}
+.food-ttl{
+	font-size: 2.8rem;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 60px;
+}
+.lineup{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.name{
+	font-size: 2.4rem;
+	text-align: left;
+}
+.price{
+	font-size: 2.4rem;
+	letter-spacing: 0.1em;
+}
+.comment{
+	font-size: 1.6rem;
+	text-align: left;
+}
+.food{
+	padding-top: 5px;
+}
+/*ドリンクメニュー*/
+
+.drink-inner{
+	width: 640px;
+	margin:  0 auto;
+	padding-bottom: 120px;
+}
+.drink-top{
+	font-size: 3.6rem;
+	font-weight:bold;
+	text-align: center;
+}
+.drink-ttl{
+	font-size: 2.8rem;
+	font-weight: bold;
+	padding-top: 40px;
+}
+.top{
+	padding-top: 50px;
+}
+.drink-group{
+	display:flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.type{
+	font-size: 2.4rem;
+}
+.over{
+	padding-top: 10px;
+}
+.group{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.sake{
+	transform: translateX(15px);
+}
+/*ドリンクここまで*/
+/*締め*/
+.sum{
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+	padding-bottom: 200px;
+}
+.menu-sum{
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.sum-icon{
+	width: 60px;
+	height: 40px;
+}
+/*フッター*/
+
+.footer-inner{
+	padding: 20px 103px 10px;
+	color: #F7EFE4;
+	background-color: #4E2A04;
+	text-align: center;
+}
+.footer-over{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+.footer-fa{
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+.footer-tel{
+	font-size: 3.6rem;
+	font-weight: bold;
+	padding-top: 10px;
+	text-align: center;
+	letter-spacing: 0.2em;
+}
+.footer-open{
+	font-size:1.6rem;
+	text-align: left;
+}
+.footer-adrress{
+	text-align: left;
+	font-size: 1.6rem;
+	padding: 5px 0 5px;
+}
+.time{
+	padding-top: 10px;
+	text-align: left;
+}
+.footer-right{
+	text-align: right;
+	padding-top: 5px;
+}
+.footer-logo{
+	width: 200px;
+	height: 60px;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.footer-logo:hover{
+	opacity: 0.8;
+}
+/*スマホロゴ打ち消し*/
+.footer-logo-re{
+	display: none;
+}
+.footer-nav{
+	font-size: 2.8rem;
+	font-weight: bold;
+	list-style: none;
+	display: flex;
+    padding-top: 31px;
+}
+.footer-nav-btn{
+	padding-left: 20px;
+}
+.copy{
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+/*トップへ戻るボタン*/
+
+#PageTopBtn {
+	width: 60px;
+	height: 60px;
+	display: block;
+    position: fixed; /*ボタンの配置場所を固定*/
+    right: 10px; /*右からのボタンの配置場所を指定*/
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+#PageTopBtn:hover{
+  opacity: 0.9;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.95);
+}
+
+
+@media screen and (max-width:768px){
+	
+	html,body{
+		margin: 0;
+		padding: 0;
+	}
+	.body{
+		background-image: none;
+		margin: 0;
+	}
+	
+	
+	/*背景画像インナー*/
+.backimg-inner{
+	background-image:url(../../images/logo-pass.png);
+	 background-repeat:no-repeat;
+	 background-position: center 30% ;
+	 background-attachment:fixed;
+	 background-size: 72.92%;
+}
+
+/*	ヘッダー*/
+	
+/*	pcの打ち消し*/
+	.header-inner{
+		margin: 0;
+		padding: 1.33% 6% 1.33%; 
+	}
+	.header-over{
+		display: none;
+		max-width: 100%;
+	}	
+	
+/*ヘッダーの左右並び*/
+	.header-re{
+		display: flex;
+		justify-content: space-between;
+	}
+/*ヘッダーのロゴ*/
+	.logo-re{
+		display: block;
+		max-width: 100%;
+		width: 38%;
+	}
+/*ヘッダー右側*/
+	.re-right{
+		text-align: right;
+		margin: auto;
+	}
+						
+	/*ハンバーガーボタン三本線*/
+	.nav_padding{
+		padding: 1.4%;
+		margin: 0 auto;
+	}
+nav.menu0{ 
+	display: block;
+	width:25px; 
+	height:20px; 
+	top: 5px; 
+	right:10px; 
+	position:fixed; 
+	cursor:pointer; 
+	overflow:hidden; 
+	z-index: 9999;
+	}
+	
+	nav .menu1{ 
+		width: 25px;
+		height:2%; 
+		background-color: #4E2A04; 
+		top:6px; 
+		position:absolute; 
+		} 
+	nav .menu2{ 
+		width: 25px;
+		height:2%; 
+		background-color: #4E2A04; 
+		top:16px; 
+		position:absolute;
+		} 
+	nav .menu3{ 
+		width: 25px;
+		height:2%; 
+		background-color: #4E2A04; 
+		top:26px; 
+		position:absolute; 
+		}
+				/*ハンバーガーボタン三本線終了*/
+
+				/*ハンバーガーアニメーション*/
+	nav .menu1, nav .menu2, nav .menu3 { 
+			transition: all 0.5s ease-out; 
+			-o-transition: all 0.5s ease-out; /* Opera */ 
+			-moz-transition: all 0.5s ease-out; /* Firefox */
+			-webkit-transition: all 0.5s ease-out; /* GoogleChrome, Safari */ 
+			-ms-transition: all 0.5s ease-out; /* IE */ 
+		}
+/*クリックした後の動き*/
+	nav .menuclick1{ 
+		display: block;
+		top:8px; 
+		-o-transform: rotate(405deg); 
+		-moz-transform: rotate(405deg); 
+		-webkit-transform: rotate(405deg);
+		-ms-transform: rotate(405deg); 
+		transform: rotate(405deg); 
+	}
+	nav .menuclick2{ 
+		background-color:rgba(255,255,255,0);  
+		}
+	nav .menuclick3{ 
+		top:8px; 
+		-o-transform: rotate(-405deg); 
+		-moz-transform: rotate(-405deg);
+		-webkit-transform: rotate(-405deg); 
+		-ms-transform: rotate(-405deg); 
+		transform: rotate(-405deg); 
+		}
+
+/*ナビのcss*/
+	#menu0{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 4.8vw;
+		font-weight: bold;
+		color: #F7EFE4;
+		text-align: center;
+		display: none;
+		background-color: rgba(78,42,4,0.95);
+		z-index: 9998;
+	}
+/*メニューバー*/
+	.re-nav{
+		border-bottom: dashed 1px #EBE0D4;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all  0.5s ease;
+	}
+/*	ナビロゴ*/
+	.menu-logo{
+		width: 30%;
+		height: auto;
+		margin:  0 auto;
+		padding: 5%;
+	}
+/*	ナビtel*/
+	.nav-info{
+		width: 60%;
+		margin: 0 auto;
+		padding-top: 7.4%;
+	}
+	.nav-tel{
+		font-size: 4.0vw;
+		letter-spacing: 0.2em;
+	}
+	.nav-o{
+		font-size: 3.2vw;
+		font-weight: normal;
+	}
+/*中段（ランチの営業時間）のパディング*/
+	.nav-l{
+		padding: 5% 0 3%;
+	}
+/*	年中無休*/
+	.nav-d{
+		font-size: 3.0vw;
+		font-weight: normal;		
+		padding-top: 3%;
+	}
+/*Topの上ボーダー*/
+	header ul li:first-of-type{
+		padding-top: 3.5%;
+	}
+/*Accessの下padding*/
+	header ul li:last-of-type{
+		border-bottom: none;
+		padding-bottom: 3.5%;
+	}
+	header ul {
+		width: 70%;
+		margin: 0 auto;
+		border-top: outset 2px #EBE0D4;
+		border-bottom: inset 2px #EBE0D4;
+	}
+	
+/*枠全体でクリックさせたい*/
+	header li {
+		width: 100%;
+		display: inline-block;
+		border-bottom: solid 1px #EBE0D4;
+	}
+	header li a {
+		display: block;
+		width: 100%;
+		padding: 7% 0 7%;
+	}
+	.re-nav:hover{
+		background-color: #EBE0D4;
+		color: #4E2A04;
+	}
+	
+/*	ハンバーガー終了*/
+	
+/*	メニューナビ*/
+	/* 固定 */
+
+	#globalNavi ul {
+		justify-content: start;
+		padding-left: 2%;
+	}
+	#globalNavi ul li{
+		margin: 0;
+	}
+
+	#globalNavi ul :first-child{
+	}
+	#globalNavi ul :last-child{
+	}
+
+	#globalNavi li a img {
+		margin: 5% 0;
+		padding-left: 30%;
+		padding-right: 30%;
+		width: 40px;
+}
+
+
+	.contents-ttl{
+		font-size: 5.86vw;
+		padding: 5% 7%;
+		margin: -3% 0 0 ;
+		text-align: center;
+	}
+/*ランチインナー上100下120*/
+	.lunch-inner{
+		padding: 13.337% 2.5% 16%;
+	}	
+/*ランチタイトルウィドス*/
+	.ttl-menu{
+		width: 67.93%;
+		padding-bottom: 8.423%;
+	}
+/*ランチタイトルフォントサイズ*/
+	.ttl-name{
+		font-size: 5.314vw;
+	}
+/*ランチアイコンの大きさ*/
+	.right{
+		width: 16.53%;
+		height: 0%;
+	}
+/*ランチタイムフォントサイズ*/
+	.open-time{
+    	font-size: 4.34782vw;
+	}
+/*画像テキストの塊*/
+	.re-list{
+		width: 44.51%;
+	}
+	.lunch-list{
+		width: 100%;
+	}
+/*	ランチメニュー画像*/
+	.lunch-img{
+		width: 89%;
+		height: auto;
+	}	
+/*	上段画像の調整*/
+	.high{
+		width: 88%;
+	}
+/*	中段画像の画像調整*/
+	.low{
+		width: 88%;
+	}
+/*	左側幅調整*/
+	.le-list{
+	}
+/*	ランチ上段のまとまり*/
+	.lunch-up{
+		width: 100%;
+		padding-top: 8.425%;
+	}
+/*	ランチ下段のウィドス打ち消し*/
+	.lunch-low{
+		width: 100%;
+		padding-top: 7.02%
+	}
+/*	ランチ名*/
+	.lunch-name{
+		font-size:3.2vw;
+		width: 100%;
+		padding-top: 3.41%;
+	}
+/*ランチオプション*/
+	.lunch-sup{
+		font-size:2.13vw;
+	}
+/*ランチ紹介文*/
+	.lunch-ex{
+		font-size:2.4vw;
+		width: 94.45%;
+		margin: 0 auto;
+		padding-top: 2.84%;
+	}
+	.left{
+	text-align: left;
+	}
+	.li-right{
+		text-align: right;
+	}
+/*	pcキッシュ打ち消し*/
+	.quiche{
+		display: none;
+	}
+/*	最下段キッシュ*/
+	.re-quiche{
+		display: block;
+		width: 49.44%;
+		margin: 0 auto;
+		padding-top: 7.02%;
+	}
+/*	紹介文のテキスト調整*/
+	.hun{
+	width: 89.5%;
+	letter-spacing: -0.06em;
+	}
+	.yu{
+		width: 90%;
+	}
+	.pa{
+		width: 94%;
+	}
+	.ga{
+		width: 90%;
+	}
+	.qui{
+		width: 96%;
+	}
+	
+
+/*ランチデザート欄*/
+	.lunch-des{
+		width: 84.3%;
+		padding-top: 8.425%;
+	}
+	.des-ex{
+		font-size:3.2vw;
+	}
+/*	デザートアイコン*/
+	.des-icon{
+		width: 4.5%;
+		height: 0%;
+		padding-right: 1.34%;
+	}
+	.des-sub{
+		font-size:2.13vw;
+	}
+	
+	
+/*	ディナー*/
+	.dinner-inner{
+	background-image: url("../../images/re-dinner-salad.png"),
+					  url("../../images/re-dinner-piatto.png"),
+					  url("../../images/re-dinner-risotto.png"),
+					  url("../../images/re-dinner-dessert.png"),
+					  url("../../images/re-dinner-drink.png");
+
+	background-size: 14%,14%,14%,19%,14%;
+	
+	background-position: top 20% right 0,
+		                 top 37% left 0,
+		                 top 54% right 0,
+		                 top 69% left 0,
+		                 top 85% right 0;
+	
+	background-repeat: no-repeat,
+	                   no-repeat,
+	                   no-repeat,
+	                   no-repeat,
+	                   no-repeat;
+   
+	}
+	.dinnerttl{
+		width: 64.535%;
+		padding-bottom: 5.5%;
+	}
+/*	フォークのアイコン*/
+	.dinnericon{
+    width: 14.975%;
+	height: 0%;
+		
+	}
+/*	コース料理*/
+	.course-inner{
+		width: 72%;
+		padding-top: 10.5%;
+	}
+	
+	.course-inner h3{
+		font-size: 4.8vw;
+	}
+	.course-inner img{
+		width: 56%;
+		padding-top: 9.26%;
+}
+
+	.cource{
+		font-size: 4.27vw;
+		padding-top: 5.334%;
+	}
+/*	コース説明*/
+	.sub{
+		font-size:2.4vw;
+		padding-top: 2.7%;
+	}
+/*日替わりメニュー説明*/
+	.weekly{
+		font-size:3.2vw;
+		padding-top: 7.41%;
+        width: 107%;
+	}
+/*	フードメニュー全体のウィドス*/
+	.menu-inner{
+	}
+	.food-ttl{
+		font-size:3.73vw;
+		padding-top: 11.112%;
+	}
+	.food-inner{
+		width: 72%;
+		padding: 13.335% 0 17.33%;
+	}
+/*メニュー名の上パディング*/
+	.lineup{
+		padding-top: 5.56%;
+	}
+	.food-top{
+		font-size:4.8vw;
+	}
+	.name{
+		font-size: 3.2vw;
+	}
+	.price{
+		font-size: 3.2vw;
+	}
+	.comment{
+		font-size: 2.13vw;
+		width: 117%;
+		padding-top: 0.925%;
+	}
+	.risotto{
+		width: 112%;
+	}
+	.riso{
+		transform: translateX(-64%);
+	}
+	
+/*	ドリンク*/
+	.drink-inner{
+		width: 72%;
+		padding-bottom: 13.335%;
+	}
+	.drink-top{
+		font-size:4.8vw;
+	}
+	.drink-ttl{
+		font-size: 3.73vw;
+		padding-top: 7.41%;
+	}
+	.type{
+		font-size: 3.2vw;
+	}
+	.top{
+		padding-top: 9.26%;
+	}
+	.over{
+		padding-top: 1.85%;
+	}
+	.drink-group{
+		padding-top: 0;
+	}
+/*見出しの下のドリンクの間隔*/
+	.dis{
+		padding-top: 1.85%;
+	}
+/*	ドリンクの間覚*/
+	.mid{
+		padding-top: 5.556%;;
+	}
+	.group{
+		padding-top: 0;
+	}
+	.sake{
+		transform: translateX(15%);
+	}
+/*最後*/
+	.menu-sum{
+		width: 94.0%;
+	}
+	.sum{
+		font-size: 2.133vw;
+		padding-bottom: 22.73%;
+	}
+	.sum-icon{
+		width: 6.0%;
+		height: 0%;
+	}
+	/*フッター*/
+	/*フッターの右側打ち消し*/
+	.footer-right{
+		display: none;
+	}
+/*下部パディング打ち消し*/
+	.footer-over{
+		padding-bottom: 0;
+	}
+/*フッターのパディング10px 0 20px*/
+	.footer-inner{
+		padding: 5.38% 0 5.38%;
+	}	
+/*ご予約・お問い合わせ*/
+	.footer-fa{
+		font-size: 3.56vw;	
+	}
+/*電話番号*/
+	.footer-tel{
+		font-size: 4.15vw;
+		padding-top: 1.48%;
+		width: 50%;/*borderの為のwidth設定*/
+		margin: 0 auto;
+	}
+/*フッター中央揃え*/
+ 	/*営業時間*/
+	.time{
+		text-align: center;
+		font-size: 2.97vw;
+		padding-top: 1.48%;
+	}
+	.footer-adrress{
+		text-align: center;
+		font-size: 1.97vw;
+	}
+	.footer-open{
+		text-align: center;
+	}
+	.copy{
+		text-align: center;
+		padding: 0;
+	}
+/*フッターロゴ*/
+	.footer-logo-re{
+		display: block;
+		width: 28.75%;
+		margin: 0 auto;
+		padding: 4.45% 0 4.45%;
+	}
+
+#PageTopBtn {
+	width: 13%;
+	height: auto;
+}
+
+	
+	
+	
+	
+}
